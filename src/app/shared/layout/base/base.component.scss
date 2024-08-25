@@ -1,0 +1,94 @@
+.sidebar {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 20px;
+    color: white;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    // background-color: #fffbfa;
+    background-color: white;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.header-sidebar {
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.header {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;    
+    background-color: #fffbfa;        
+    border-radius: 10px;
+}
+
+.container {
+    padding: 1rem;    
+}
+
+.content-sidebar {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.item {
+    color: black;
+    display: flex;
+    gap: 1rem;
+    font-weight: bold;
+    width: 55%;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: #f9baa6;
+    color: white;
+    width: 80%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.selected {
+    background-color: #f9baa6;
+    color: white;
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pi-shopping-cart{
+    font-size: 1.3rem;
+}
+
+.sheet{
+    background-color: #fffbfa;
+    width: 100%;
+    border-radius: 12px;
+}

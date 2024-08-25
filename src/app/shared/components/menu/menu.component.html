@@ -1,0 +1,16 @@
+<!-- <br />    
+@for(item of card; track item.title){
+<app-card-product></app-card-product>
+}
+
+ -->
+
+
+<div class="card">
+    <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="false"
+        [responsiveOptions]="responsiveOptions">
+        <ng-template let-product pTemplate="item">
+            <app-card-product></app-card-product>
+        </ng-template>
+    </p-carousel>
+</div>

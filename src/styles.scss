@@ -1,1 +1,88 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+@import "primeicons/primeicons.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+
+@import "primeng/resources/primeng.css";  
+
+$candy-store-primary: mat.define-palette(mat.$indigo-palette);
+$candy-store-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$candy-store-warn: mat.define-palette(mat.$red-palette);
+
+
+
+
+$candy-store-theme: mat.define-light-theme((color: (primary: $candy-store-primary,
+        accent: $candy-store-accent,
+        warn: $candy-store-warn,
+      ),
+      typography: mat.define-typography-config(),
+      density: 0));
+
+@include mat.all-component-themes($candy-store-theme);
+
+
+:root {
+  --mat-sidenav-content-background-color: white;
+  --mat-sidenav-container-background-color: brown;
+
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.p-sidebar {
+  background-color: #f5ebe8 !important;
+  border-radius: 2px;
+  color: black !important;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.ws-15 {
+  width: 15%;
+}
+
+@media(max-width: 400px) {
+  .ws-15 {
+    width: 100%;
+  }  
+}

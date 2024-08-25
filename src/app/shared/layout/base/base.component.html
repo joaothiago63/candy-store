@@ -1,0 +1,27 @@
+<div class="main">
+    <p-sidebar [(visible)]="sidebarVisible" styleClass="ws-15">
+        <ng-template pTemplate="headless">
+            <div class="header-sidebar">
+                <span class="logo">(Logo )</span>
+                <i class="pi pi-times pointer" (click)="sidebarVisible=false"></i>
+            </div>
+            <div class="content-sidebar">
+                @for(item of contentSidebar; track item.label){
+                <a [routerLink]="[item.url]" [class]="firstRoute=== item.url ? 'item selected' : 'item'">
+                    <i class="material-symbols-outlined pointer">{{item.logo}}</i>
+                    <label class="pointer">{{item.label}}</label>
+                </a>
+                }
+            </div>
+        </ng-template>
+    </p-sidebar>
+    <div class="header">
+        <i class="pi pi-bars pointer" (click)="sidebarVisible = true"></i>
+        <i class="pi pi-shopping-cart"></i>
+    </div>
+    <div class="container">
+        <div class="sheet">
+            <ng-content></ng-content>
+        </div>
+    </div>
+</div>
