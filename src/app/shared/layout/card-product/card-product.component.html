@@ -1,18 +1,11 @@
-<p-accordion class="w-full" expandIcon="none" collapseIcon="none">
-    <p-accordionTab>
-        <ng-template pTemplate="header">
-            <div class="content-header">
-                <label>Leite Ninho</label>
-                <img class="product-img"
-                    src="https://cantinhodereceitas.com.br/wp-content/uploads/2024/03/Pudim-de-Sorvete-Leite-Ninho-com-Chocolate-1200x900.jpg" />
-            </div>
-        </ng-template>
-        <div class="content-description">
-            <span class="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo
-            </span>
-        </div>
-    </p-accordionTab>
-</p-accordion>
+<div>
+    <div class="content-header">
+        <label>{{card().title}}</label>
+        <img class="product-img" [src]=card().image />
+    </div>
+    <div class="content-description">
+        <span class="description">
+            {{card().description}}
+        </span>
+    </div>
+</div>
