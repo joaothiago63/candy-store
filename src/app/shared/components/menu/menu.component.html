@@ -1,8 +1,10 @@
-<div class="card">
-    <p-carousel [value]="cards" [numVisible]="4" [numScroll]="4" [circular]="true"
-        [responsiveOptions]="responsiveOptions">
-        <ng-template let-product pTemplate="item">
-            <app-card-product [card]="product"></app-card-product>
-        </ng-template>
-    </p-carousel>
+<div class="sheet">
+    <div class="carousel">
+        <p-carousel [value]="cards" [numVisible]="4" [numScroll]="4" [circular]="true"
+            [responsiveOptions]="responsiveOptions">
+            <ng-template let-product pTemplate="item">
+                <app-card-product [card]="product"></app-card-product>
+            </ng-template>
+        </p-carousel>
+    </div>
 </div>

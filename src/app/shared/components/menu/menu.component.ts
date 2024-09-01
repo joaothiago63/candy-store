@@ -19,11 +19,11 @@ export class MenuComponent {
   responsiveOptions: any[] | undefined;
 
   ngOnInit() {
-    for (var item = 0; item < 20; item++) {
+    for (var item = 0; item < 5; item++) {
       this.cards.push({
-        title: 'Elefante',
-        description: 'Lorem Ipsum',
-        image: 'https://www.petz.com.br/blog/wp-content/uploads/2022/08/quanto-tempo-vive-um-elefante-final-1280x720.jpg'
+        title: 'Leite ninho',
+        description: 'Sorvete Leite Ninho Sorvete Leite Ninho Sorvete Leite Ninho Sorvete Leite Ninho',
+        image: 'https://cdn.awsli.com.br/800x800/680/680434/produto/71232678/leite-ninho-fases-1-800g-58b322ca.jpg'
       })
 
       this.responsiveOptions = [

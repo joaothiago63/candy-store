@@ -1,11 +1,13 @@
-<div>
-    <div class="content-header">
-        <label>{{card().title}}</label>
+<div class="content-header">
+    <label>{{card().title}}</label>
+    <div class="flex center">
         <img class="product-img" [src]=card().image />
     </div>
-    <div class="content-description">
-        <span class="description">
-            {{card().description}}
-        </span>
+    <span class="description">
+        {{card().description}}
+    </span>
+    <div class="car-add">
+        <span>Adicionar ao carrinho</span>        
+        <span class="pi pi-cart-plus"></span>        
     </div>
 </div>

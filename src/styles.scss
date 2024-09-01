@@ -30,7 +30,7 @@ $candy-store-theme: mat.define-light-theme((color: (primary: $candy-store-primar
 :root {
   --mat-sidenav-content-background-color: white;
   --mat-sidenav-container-background-color: brown;
-  
+
 }
 
 html,
@@ -50,13 +50,6 @@ body {
 
 .bg-green {
   background-color: green;
-}
-
-.card {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 10px;
-  margin-bottom: 1rem;
 }
 
 .w-100 {
@@ -87,13 +80,37 @@ body {
   z-index: 1000 !important;
 }
 
-.p-carousel .p-carousel-indicators{
+.p-carousel .p-carousel-indicators {
   z-index: 0 !important;
 }
 
+.flex {
+  display: flex;
+}
 
-@media(max-width: 400px) {
+.center {
+  justify-content: center;
+}
+
+@media(max-width: 500px) {
+
   .ws-15 {
     width: 100%;
+  }
+
+  .product-img {
+    width: 155px !important;
+    border: none;
+  }
+
+  .content-header {
+    margin: 0;
+    border: none;
+    width: 100%;
+  }
+
+  .content-header {
+    margin: 0!important;
+    padding: 0!important;
   }
 }
