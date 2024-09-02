@@ -110,7 +110,14 @@ body {
   }
 
   .content-header {
-    margin: 0!important;
-    padding: 0!important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+@media(max-width: 400px) {
+  .car-add {
+    width: 90% !important;
+    margin: 0 auto;
   }
 }
