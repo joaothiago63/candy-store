@@ -1,8 +1,7 @@
 <div class="main">
     <p-sidebar [(visible)]="sidebarVisible" styleClass="ws-15">
         <ng-template pTemplate="headless">
-            <div class="header-sidebar">
-                <span class="logo">(Logo)</span>
+            <div class="header-sidebar">                                 
                 <i class="pi pi-times pointer" (click)="sidebarVisible=false"></i>
             </div>
             <div class="content-sidebar">
@@ -17,7 +16,7 @@
     </p-sidebar>
     <div class="header">
         <i class="pi pi-bars pointer" (click)="sidebarVisible = true"></i>
-        <i class="pi pi-shopping-cart"></i>
+        <i class="pi pi-shopping-cart" (click)="openShop()" ></i>
     </div>
     <div class="container">
         <ng-content></ng-content>

@@ -1,12 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
-import { Router , NavigationEnd, RouterLink} from '@angular/router';
+import { Router, NavigationEnd, RouterLink } from '@angular/router';
+import { ShoppService } from '../../components/dialog/shopp.service';
 
 @Component({
   selector: 'layout',
   standalone: true,
-  imports: [ButtonModule, SidebarModule,RouterLink],
+  imports: [ButtonModule, SidebarModule, RouterLink],
   templateUrl: './base.component.html',
   styleUrl: './base.component.scss'
 })
@@ -15,14 +16,20 @@ export class BaseComponent {
 
   route = inject(Router)
 
-  firstRoute : string | undefined
+  shoppService: ShoppService = inject(ShoppService)
+
+  firstRoute: string | undefined
 
   ngAfterViewInit() {
     this.route.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {        
-        this.firstRoute = event.url.substring(1);                        
+      if (event instanceof NavigationEnd) {
+        this.firstRoute = event.url.substring(1);
       }
     });
+  }
+
+  openShop(): void {
+    this.shoppService.open()
   }
 
   contentSidebar: sidebarModel[] = [

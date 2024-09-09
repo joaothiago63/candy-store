@@ -1,0 +1,22 @@
+@for(item of products; track item.name ; let last = $last) {
+<article class="content">
+    <img [src]=item.image>
+    <div class="panel">
+        <p-button label="+" (onClick)="increase(item)" />
+        <p-inputNumber [min]="1" [(ngModel)]="item.quantity" class="r-1" [useGrouping]="false" />
+        <p-button label="-" (onClick)="toDecrease(item)" />
+    </div>
+    <div class="trash">
+        <div class="content-trash">
+            <i class="pi pi-trash"></i>
+        </div>
+    </div>
+</article>
+@if(!last){
+<hr />
+}
+}
+
+<div class="car-add">
+    <span>Finalizar Compra</span>
+</div>

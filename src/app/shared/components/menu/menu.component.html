@@ -1,4 +1,5 @@
-<div class="sheet">
+<article class="article-content">
+    <label class="title">Os mais pedidos</label>
     <div class="carousel">
         <p-carousel [value]="cards" [numVisible]="4" [numScroll]="4" [circular]="true"
             [responsiveOptions]="responsiveOptions">
@@ -7,4 +8,15 @@
             </ng-template>
         </p-carousel>
     </div>
-</div>
+</article>
+<article>
+    <label class="title">Todos os copos *</label>
+    <div class="carousel">
+        <p-carousel [value]="cards" [numVisible]="4" [numScroll]="4" [circular]="true"
+            [responsiveOptions]="responsiveOptions">
+            <ng-template let-product pTemplate="item">
+                <app-card-product [card]="product"></app-card-product>
+            </ng-template>
+        </p-carousel>
+    </div>
+</article>

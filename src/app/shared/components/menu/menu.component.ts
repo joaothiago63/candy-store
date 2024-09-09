@@ -21,7 +21,7 @@ export class MenuComponent {
   ngOnInit() {
     for (var item = 0; item < 5; item++) {
       this.cards.push({
-        title: 'Leite ninho',
+        title: 'Leite Ninho',
         description: 'Sorvete Leite Ninho Sorvete Leite Ninho Sorvete Leite Ninho Sorvete Leite Ninho',
         image: 'https://cdn.awsli.com.br/800x800/680/680434/produto/71232678/leite-ninho-fases-1-800g-58b322ca.jpg'
       })

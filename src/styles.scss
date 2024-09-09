@@ -36,7 +36,7 @@ $candy-store-theme: mat.define-light-theme((color: (primary: $candy-store-primar
 html,
 body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: "Abel", sans-serif !important;
 }
 
 body {
@@ -53,7 +53,7 @@ body {
 }
 
 .w-100 {
-  width: 100%;
+  width: 100%!important;
 }
 
 .p-sidebar {
@@ -74,7 +74,9 @@ body {
   width: 15%;
 }
 
-
+.w-25{
+  width: 25%!important;
+}
 
 .p-accordion-content {
   z-index: 1000 !important;
