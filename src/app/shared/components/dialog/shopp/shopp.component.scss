@@ -1,0 +1,61 @@
+.content {
+    padding: 0.5rem;
+    margin: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.content img {
+    height: 7rem;
+    width: auto;
+}
+
+hr {
+    border: 0;
+    width: 85%;
+    height: 2px;
+    background-color: #e1e1e1;
+}
+
+.car-add {
+    width: 100%;
+    background-color: #3afa70;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.car-add:hover {
+    color: white;
+}
+
+.panel{
+ display: flex;
+ align-items: center;
+ width: 100%;
+ gap: 0.2rem;
+}
+
+.trash{
+    display: flex;
+    align-items: center;    
+    cursor: pointer;
+}
+
+.content-trash{
+    background-color: red;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pi-trash{
+    font-size: 1.3rem;
+    color: white;
+}
+
+:host ::ng-deep .p-inputtext{
+    width: 3rem!important;
+}
